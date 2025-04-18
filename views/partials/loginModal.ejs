@@ -1,0 +1,40 @@
+<div class="modal" id="loginModal">
+  <div class="modal-glass">
+    <span class="close-btn" id="closeModal">&times;</span>
+
+    <div class="glass-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Login Icon" width="50" />
+    </div>
+
+    <h2 style="color: #222;">Welcome Back</h2>
+    <p style="color: #444;">Please enter your details to login.</p>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" width="24" />
+        <input type="text" id="username" placeholder="Username or Email" required />
+        <img id="usernameTick" class="tick-icon" src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="20" style="display: none;" />
+      </div>
+    
+      <div class="input-group password-group">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" width="24" />
+        <input type="password" id="password" placeholder="Password" required />
+        <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" alt="Show Password" class="toggle-password" onclick="togglePassword()" id="toggleIcon" width="24" />
+        <img id="passwordTick" class="tick-icon" src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="20" style="display: none;" />
+      </div>    
+
+      <div class="warning" id="warningMsg" style="display: none; color: #d9534f;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="20" />
+        <span id="warningText">Both fields are required!</span>
+      </div>
+      <div style="text-align: left; margin-top: 10px;">
+        <a href="/forgot-password" style="color: #0056b3; font-size: 14px; text-decoration: none;">Forgot password?</a>
+      </div>
+
+      <div class="form-buttons">
+        <button type="button" class="glass-cancel-btn" id="cancelBtn">Cancel</button>
+        <button type="submit" class="glass-login-btn">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
