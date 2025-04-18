@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,18 +7,266 @@
   <link rel="stylesheet" href="/css/navbar.css" />
   <link rel="stylesheet" href="/css/modal.css" />
   <link rel="stylesheet" href="/css/register.css" />
+  <link rel="stylesheet" href="/css/home.css" /> <!-- Newly added -->
+  <!-- Add this in <head> if not already -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="/css/footer.css">
+
 </head>
 <body>
 
   <header>
     <%- include('../partials/navbar') %>
   </header>
+  <!-- Slider -->
+<div class="slider-container">
+  <div class="slider">
+        <img src="/images/hotelview1.jpg" class="slide" />
+    <img src="/images/hotelview2.jpg" class="slide" />
+    <img src="/images/hotelview3.jpg" class="slide" />
+    <img src="/images/hotelview4.jpg" class="slide" />
+    <img src="/images/hotelviewinside1.jpg" class="slide" />
+    <img src="/images/hotelviewinside2.jpg" class="slide" />
+    <img src="/images/hotelviewinside3.jpg" class="slide" />
+    <img src="/images/hotelviewinside4.jpg" class="slide" />
+    <img src="/images/hotelviewswimmingpool.jpg" class="slide" />
+    <img src="/images/hotelviewgallery.jpg" class="slide" />
+    <img src="/images/hotelviewdinnerTable.jpg" class="slide" />
+    <img src="/images/hotelviewbedsheets.jpg" class="slide" />
+    <img src="/images/hotelview1.jpg" class="slide" />
+    <img src="/images/hotelviewbar.jpg" class="slide" />
+    <img src="/images/hotelsideview.jpg" class="slide" />
+     
+  </div>
+</div>
+<!-- Availability Form -->
+<div class="availability-form">
+  <form>
+    <label>
+      Check-in:<input type="date" name="checkin">
+      Check-out:<input type="date" name="checkout">
+      Adults:<input type="number" name="adults" min="1">
+      Children:<input type="number" name="children" min="0">
+      <button type="submit">Check Availability</button>
+    </label>
+  </form>
+</div>
+
+<!-- =================== Our Rooms Section =================== -->
+<div class="container rooms-section">
+  <h2 class="section-title">Our Rooms</h2>
+
+  <div class="room-cards">
+    <!-- Room Card 1 -->
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Single Room">
+
+      <div class="room-details">
+        <h3>Deluxe Room</h3>
+        <p class="price">₹2,500 / night</p>
+        <ul class="features">
+          <li>Double Bed</li>
+          <li>Attached Bathroom</li>
+          <li>In-room Bakery</li>
+          <li>Comfort Sofa</li>
+        </ul>
+        <p class="facilities">WiFi, TV, AC, Room Service</p>
+        <div class="rating">★★★★☆</div>
+        <div class="room-actions">
+          <button class="btn-book">Book Now</button>
+          <button class="btn-details">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 2 -->
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Single Room">
+      <div class="room-details">
+        <h3>Single Room</h3>
+        <p class="price">₹1,500 / night</p>
+        <ul class="features">
+          <li>Single Bed</li>
+          <li>Attached Bathroom</li>
+          <li>Bakery Access</li>
+          <li>Compact Sofa</li>
+        </ul>
+        <p class="facilities">WiFi, TV, Heater, Room Service</p>
+        <div class="rating">★★★☆☆</div>
+        <div class="room-actions">
+          <button class="btn-book">Book Now</button>
+          <button class="btn-details">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 3 -->
+    <div class="room-card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Single Room">
+      <div class="room-details">
+        <h3>Premium Suite</h3>
+        <p class="price">₹4,200 / night</p>
+        <ul class="features">
+          <li>Double Bed</li>
+          <li>Luxury Bathroom</li>
+          <li>Mini Bakery</li>
+          <li>Sofa Lounge</li>
+        </ul>
+        <p class="facilities">WiFi, Smart TV, AC, Butler Service</p>
+        <div class="rating">★★★★★</div>
+        <div class="room-actions">
+          <button class="btn-book">Book Now</button>
+          <button class="btn-details">More Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Rooms Button -->
+  <div class="more-rooms-btn">
+    <button class="btn-more-rooms">More Rooms</button>
+  </div>
+</div>
+
+<!-- =================== Our Facilities Section =================== -->
+<div class="container facilities-section">
+  <h2 class="section-title">Our Facilities</h2>
+
+  <div class="facility-grid">
+    <!-- Facility Item -->
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/481/481113.png" alt="WiFi">
+      <p>Free WiFi</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Pool">
+      <p>Swimming Pool</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/3176/3176290.png" alt="Restaurant">
+      <p>Restaurant</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Gym">
+      <p>Fitness Gym</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Parking">
+      <p>Free Parking</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174046.png" alt="TV">
+      <p>Smart TV</p>
+    </div>
+  </div>
+</div>
+
+<!-- =================== Testimonials Section =================== -->
+<div class="container testimonials-section">
+  <h2 class="section-title">What Our Guests Say</h2>
+
+  <div class="testimonials-slider">
+    <!-- Testimonial 1 -->
+    <div class="testimonial-item">
+      <p class="review-text">"The stay was amazing! The staff was extremely friendly, and the facilities were top-notch. Highly recommend!"</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Author 1">
+        <p class="author-name">John Doe</p>
+        <p class="author-role">Traveler</p>
+      </div>
+      <div class="review-rating">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-item">
+      <p class="review-text">"We loved the spacious rooms and the amazing view. A perfect getaway! Will definitely come back."</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Author 2">
+        <p class="author-name">Jane Smith</p>
+        <p class="author-role">Business Visitor</p>
+      </div>
+      <div class="review-rating">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-item">
+      <p class="review-text">"The facilities exceeded our expectations, especially the pool and the restaurant. Fantastic experience!"</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Author 3">
+        <p class="author-name">Michael Johnson</p>
+        <p class="author-role">Couple</p>
+      </div>
+      <div class="review-rating">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="star" class="star-icon">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =================== Reach Us Section =================== -->
+<div class="container reach-us-section">
+  <h2 class="section-title">Reach Us</h2>
+
+  <div class="reach-us-content">
+    <!-- Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.215672498458!2d78.06224847547752!3d27.17514474883185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397471f2e8e2d5cf%3A0xc264226a9f2ff1e!2sMahua%20Khera%2C%20Agra%2C%20Uttar%20Pradesh%20282001%2C%20India!5e0!3m2!1sen!2sin!4v1713448860669!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3><i class="fas fa-phone-alt"></i> Call Us</h3>
+      <p>+91 98765 43210</p>
+
+      <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+      <div class="social-links">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <%- include('../partials/loginModal') %>
-  <%- include('../partials/register') %> <!-- Register modal -->
+  <%- include('../partials/register') %>
+  <%- include('../partials/footer') %>
+
 
   <script src="/js/navbar.js"></script>
   <script src="/js/loginModal.js"></script>
   <script src="/js/register.js"></script>
+  <script src="/js/slider.js"></script> <!-- Newly added -->
 </body>
 </html>
