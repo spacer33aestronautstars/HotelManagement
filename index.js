@@ -26,6 +26,10 @@ app.post('/check-availability', (req, res) => {
   res.send(`Checking availability for ${adults} adults and ${children} children from ${checkin} to ${checkout}`);
 });
 
+app.get('/facilities', (req, res) => {
+  res.render('pages/facilities');
+});
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server started on http://localhost:${PORT}`));
