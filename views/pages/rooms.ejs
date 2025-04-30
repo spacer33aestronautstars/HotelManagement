@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Rooms | MyFame Hotel</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/facilities.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <%- include('../partials/navbar') %>
+  </header>
+
+  <!-- Room Page Header -->
+  <section class="room-hero">
+    <h1>Explore Our Exquisite Rooms</h1>
+    <p>Choose from a variety of room types to suit your comfort and luxury needs.</p>
+  </section>
+
+  <!-- Room Cards -->
+  <section class="room-list-section">
+    <div class="room-grid">
+
+      <!-- Room Card Example -->
+      <div class="room-card">
+        <img src="/images/room1.jpg" alt="Deluxe Room">
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p class="price">₹2,500 / night</p>
+          <p class="description">Spacious and elegant room with modern amenities and a comfortable double bed.</p>
+          <ul class="features">
+            <li><i class="fas fa-bed"></i> Double Bed</li>
+            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+            <li><i class="fas fa-tv"></i> Smart TV</li>
+            <li><i class="fas fa-snowflake"></i> AC</li>
+          </ul>
+          <div class="room-actions">
+            <button class="btn">Book Now</button>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy/Update the card for more room types -->
+      <div class="room-card">
+        <img src="/images/room2.jpg" alt="Single Room">
+        <div class="room-info">
+          <h3>Single Room</h3>
+          <p class="price">₹1,500 / night</p>
+          <p class="description">Perfect for solo travelers. Comes with essential amenities and a comfortable bed.</p>
+          <ul class="features">
+            <li><i class="fas fa-bed"></i> Single Bed</li>
+            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+            <li><i class="fas fa-tv"></i> LED TV</li>
+            <li><i class="fas fa-mug-hot"></i> Breakfast</li>
+          </ul>
+          <div class="room-actions">
+            <button class="btn">Book Now</button>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more room cards similarly -->
+
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <%- include('../partials/loginModal') %>
+   <%- include('../partials/register') %>
+   <%- include('../partials/footer') %>
+
+   <script src="/js/navbar.js"></script>
+   <script src="/js/loginModal.js"></script>
+   <script src="/js/register.js"></script>
+
+</body>
+</html>

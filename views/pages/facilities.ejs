@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <title>Facilities - MyFame Hotel</title>
     <link rel="stylesheet" href="/css/facilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
 </head>
 <body>
 
@@ -57,7 +63,13 @@
     </section>
 
     <!-- Footer -->
+    <%- include('../partials/loginModal') %>
+    <%- include('../partials/register') %>
     <%- include('../partials/footer') %>
+
+    <script src="/js/navbar.js"></script>
+    <script src="/js/loginModal.js"></script>
+    <script src="/js/register.js"></script>
 
 </body>
 </html>

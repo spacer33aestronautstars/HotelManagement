@@ -15,9 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.get('/', (req, res) => {
-  res.render('pages/home');  // Renders views/pages/home.ejs
-});
+
 
 // Example POST route for availability check (optional)
 app.post('/check-availability', (req, res) => {
@@ -28,6 +26,10 @@ app.post('/check-availability', (req, res) => {
 
 app.get('/facilities', (req, res) => {
   res.render('pages/facilities');
+});
+
+app.get('/rooms', (req, res) => {
+  res.render('pages/room');
 });
 
 // Start server
