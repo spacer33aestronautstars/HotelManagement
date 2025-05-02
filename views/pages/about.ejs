@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | MyFame Hotel</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/css/register.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/about.css" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <%- include('../partials/navbar') %>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <h1>Welcome to MyFame Hotel</h1>
+    <p>Experience luxury, comfort, and hospitality like never before.</p>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>MyFame Hotel is a luxury destination known for its warm hospitality, exquisite interiors, and state-of-the-art amenities. Located in the heart of the city, we offer an unforgettable stay whether you're here for business or leisure.</p>
+
+      <h2>Our Vision</h2>
+      <p>To become the most trusted and innovative hotel experience provider with unmatched customer service and comfort.</p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Prime City Location</li>
+        <li><i class="fas fa-check-circle"></i> Award-winning Service</li>
+        <li><i class="fas fa-check-circle"></i> 24x7 Support</li>
+        <li><i class="fas fa-check-circle"></i> Luxurious Rooms and Suites</li>
+        <li><i class="fas fa-check-circle"></i> Rooftop Dining & Events</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/491871310_995947982659370_5812032519162696290_n.jpg?ccb=11-4&oh=01_Q5Aa1QGpBiL8wLYtFVGjXN1oWFZ3zRkFg3e5RX6mITseiLmr6g&oe=681DFD79&_nc_sid=5e03e0&_nc_cat=106" alt="Our Team">
+    </div>
+  </section>
+
+  <!-- Team Section -->
+<section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="team-icon"><i class="fas fa-user-tie"></i></div>
+        <h4>Mr. Yogesh</h4>
+        <p>General Manager</p>
+      </div>
+      <div class="team-member">
+        <div class="team-icon"><i class="fas fa-utensils"></i></div>
+        <h4>Chef Dhruv Kumar</h4>
+        <p>Executive Chef</p>
+      </div>
+      <div class="team-member">
+        <div class="team-icon"><i class="fas fa-concierge-bell"></i></div>
+        <h4>Krishna Garg</h4>
+        <p>Front Desk Manager</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <%- include('../partials/loginModal') %>
+  <%- include('../partials/register') %>
+  <%- include('../partials/footer') %>
+
+  <script src="/js/navbar.js"></script>
+  <script src="/js/loginModal.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>

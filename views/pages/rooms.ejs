@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/modal.css" />
     <link rel="stylesheet" href="/css/register.css" />
     <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/facilities.css">
+    <link rel="stylesheet" href="/css/room.css">
     <link rel="stylesheet" href="/css/footer.css">
 
   <!-- FontAwesome -->
@@ -18,8 +18,13 @@
 </head>
 <body>
 
-  <header>
-    <%- include('../partials/navbar') %>
+  <!-- Navbar -->
+  <%- include('../partials/navbar') %>
+
+  <!-- Header Section -->
+  <header class="room-header">
+    <h1>Our Hotel Rooms</h1>
+    <p>We ensure the best experience for our guests with top-class amenities.</p>
   </header>
 
   <!-- Room Page Header -->
@@ -34,7 +39,7 @@
 
       <!-- Room Card Example -->
       <div class="room-card">
-        <img src="/images/room1.jpg" alt="Deluxe Room">
+        <img src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-new-delhi/room-and-suites/deluxe-room/detail/deluxe-room-1.jpg?w=724&extension=webp&hash=b422e1c0ab876e7d8e3f6db06065c2dc" alt="Deluxe Room">
         <div class="room-info">
           <h3>Deluxe Room</h3>
           <p class="price">₹2,500 / night</p>
@@ -54,7 +59,7 @@
 
       <!-- Copy/Update the card for more room types -->
       <div class="room-card">
-        <img src="/images/room2.jpg" alt="Single Room">
+        <img src="https://carlyonbay.com/sites/default/files/styles/510_height/public/2022-09/bc-carlyon-accom_single-sea-facing-rm-117.webp?itok=LU_Z1OEQ" alt="Single Room">
         <div class="room-info">
           <h3>Single Room</h3>
           <p class="price">₹1,500 / night</p>
@@ -71,6 +76,66 @@
           </div>
         </div>
       </div>
+
+      <!-- Room Card: Suite -->
+<div class="room-card">
+  <img src="https://media.istockphoto.com/id/1042424568/photo/3d-rendering-luxury-modern-bedroom-suite-tv-with-wardrobe-and-walk-in-closet.jpg?s=612x612&w=0&k=20&c=AGoD3syG6mjPqWcqFVrcpzgFK_nt5SgwlVcsmyPoLbk=" alt="Suite Room">
+  <div class="room-info">
+    <h3>Suite Room</h3>
+    <p class="price">₹4,000 / night</p>
+    <p class="description">Luxury suite with living space, king-size bed, and private balcony.</p>
+    <ul class="features">
+      <li><i class="fas fa-bed"></i> King Bed</li>
+      <li><i class="fas fa-bath"></i> Private Bath</li>
+      <li><i class="fas fa-wifi"></i> Free WiFi</li>
+      <li><i class="fas fa-utensils"></i> Room Service</li>
+    </ul>
+    <div class="room-actions">
+      <button class="btn">Book Now</button>
+      <button class="btn btn-outline">View Details</button>
+    </div>
+  </div>
+</div>
+
+<!-- Room Card: Family Room -->
+<div class="room-card">
+  <img src="https://media.istockphoto.com/id/1442607481/photo/happy-family-on-a-video-call-with-grandmother.jpg?s=612x612&w=0&k=20&c=s2DVmnxXrh0_LWadvh1w-zNzj8RfBCXoCRA_EUl3NHQ=" alt="Family Room">
+  <div class="room-info">
+    <h3>Family Room</h3>
+    <p class="price">₹3,200 / night</p>
+    <p class="description">Spacious family room with two double beds and a kids’ play area.</p>
+    <ul class="features">
+      <li><i class="fas fa-bed"></i> 2 Double Beds</li>
+      <li><i class="fas fa-wifi"></i> Free WiFi</li>
+      <li><i class="fas fa-tv"></i> 40" LED TV</li>
+      <li><i class="fas fa-child"></i> Kid-Friendly</li>
+    </ul>
+    <div class="room-actions">
+      <button class="btn">Book Now</button>
+      <button class="btn btn-outline">View Details</button>
+    </div>
+  </div>
+</div>
+
+<!-- Room Card: Executive Room -->
+<div class="room-card">
+  <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/jp-hotel-in-bangalore/JP_Hotel_in_Chennai_Executive_Room_Open_x1yz4s" alt="Executive Room">
+  <div class="room-info">
+    <h3>Executive Room</h3>
+    <p class="price">₹3,800 / night</p>
+    <p class="description">Business-class room with workspace, city view, and high-speed WiFi.</p>
+    <ul class="features">
+      <li><i class="fas fa-bed"></i> Queen Bed</li>
+      <li><i class="fas fa-laptop"></i> Work Desk</li>
+      <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+      <li><i class="fas fa-city"></i> City View</li>
+    </ul>
+    <div class="room-actions">
+      <button class="btn">Book Now</button>
+      <button class="btn btn-outline">View Details</button>
+    </div>
+  </div>
+</div>
 
       <!-- Add more room cards similarly -->
 

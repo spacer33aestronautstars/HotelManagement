@@ -1,0 +1,120 @@
+.about-hero {
+    background: url('/images/hoteloutside.jpg') no-repeat center center/cover;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 10%;
+    background-color: #fefefe;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 20px;
+  }
+  
+  .about-text p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .about-text ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-text ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .about-text i {
+    color: #3498db;
+    margin-right: 10px;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-section {
+    background-color: #f4f4f4;
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .team-icon {
+    font-size: 4rem;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h4 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .team-member p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  

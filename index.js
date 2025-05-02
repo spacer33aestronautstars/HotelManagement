@@ -15,6 +15,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
+app.get('/', (req, res) => {
+  res.render('pages/home'); // assuming you have views/pages/home.ejs
+});
+
 
 
 // Example POST route for availability check (optional)
@@ -29,7 +33,21 @@ app.get('/facilities', (req, res) => {
 });
 
 app.get('/rooms', (req, res) => {
-  res.render('pages/room');
+  res.render('pages/rooms');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('pages/contact');
+});
+
+app.post('/contact', (req, res) => {
+  const { name, email, subject, message } = req.body;
+  console.log(`Contact form submitted by ${name} (${email}) - Subject: ${subject}`);
+  res.send("Thank you for reaching out! We'll get back to you soon.");
+});
+
+app.get('/about', (req, res) => {
+  res.render('pages/about');
 });
 
 // Start server

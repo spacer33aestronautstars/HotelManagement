@@ -1,3 +1,20 @@
+.room-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.room-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.room-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f4f9;
@@ -11,7 +28,7 @@ body {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 180px 20px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
   }
   
@@ -31,10 +48,11 @@ body {
   
   .room-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 10px;
+    max-width: 95vw;
     margin: 0 auto;
+    padding: 0 10px;
   }
   
   .room-card {
